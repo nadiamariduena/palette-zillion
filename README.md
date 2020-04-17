@@ -7,7 +7,7 @@ _Exercise 16 April 2020
 ### Today’s assignment is adding more color to the previous palette.
 
 Previous:
-[https://nadiamariduena.github.io/colorfarbe-test/](https://nadiamariduena.github.io/colorfarbe-test/)
+[palette One](https://nadiamariduena.github.io/first-palette/)
 
 ~~Instructions:~~
 * Look at the mockup image for a guide.
