@@ -1,0 +1,88 @@
+// MAIN
+// -----------------------------
+body {
+  // background-color: color(neutral);
+  background-color: green;
+  overflow-x: hidden;
+
+  #box-container {
+    @include flex-wrap-data;
+    width: 100vw;
+    height: auto;
+    background-color: color(neutral);
+    h2 {
+      padding: 50px 0;
+    }
+  }
+  .box-wrapper {
+    background-color: $box-color;
+    width: 90vw;
+    height: 90vh;
+    @include flex-row-data;
+  }
+  .box-one,
+  .box-two,
+  .box-three {
+    @include flex-row-data;
+    width: 25%;
+    height: 60%;
+    margin: 2px;
+    padding: 10px;
+    border: 1px rgb(212, 212, 212) solid;
+  }
+  // --------little boxes
+
+  .box-a-one,
+  .box-a-two,
+  .box-a-three {
+    @include flex-row-data;
+    background-color: colorOne(yellowLight);
+    width: 33%;
+    height: 100%;
+    margin: 5px 0 5px 0;
+  }
+
+  .box-a-one {
+    background-color: colorOne(yellowLight);
+  }
+  .box-a-two {
+    background-color: colorOne(yellowDark);
+  }
+  .box-a-three {
+    background-color: colorOne(yellowSuperLight);
+  }
+
+  // --------box2 and 3
+
+  .box-b-one,
+  .box-b-two,
+  .box-b-three,
+  .box-c-one,
+  .box-c-two,
+  .box-c-three {
+    @extend .box-a-one;
+  }
+
+  .box-b-one {
+    background-color: colorTwo(redLight);
+  }
+  .box-b-two {
+    background-color: colorTwo(redDark);
+  }
+  .box-b-three {
+    background-color: colorTwo(redSuperLight);
+  }
+
+  // --------box3
+
+  .box-c-one {
+    background-color: colorThree(azulNoche);
+  }
+  .box-c-two {
+    background-color: colorThree(azulDark);
+  }
+  .box-c-three {
+    background-color: colorThree(azulFunky);
+  }
+  //   ------end
+}

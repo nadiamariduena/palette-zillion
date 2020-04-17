@@ -1,0 +1,52 @@
+// ------------------
+// FONTS
+@mixin font-setup($font-name, $font-size, $font-weight) {
+  font-family: $font-name;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+// -----------------------------
+
+@mixin flex-wrap-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@mixin flex-column-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// -------------------
+// --MEDIA QUERIES
+
+@mixin media-sm {
+  @media screen and (max-width: 568px) {
+    @content;
+  }
+}
+// -------
+@mixin media-md {
+  @media screen and (min-width: 569px) {
+    @content;
+  }
+}
+// -------
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

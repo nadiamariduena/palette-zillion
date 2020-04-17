@@ -1,0 +1,13 @@
+@import "var";
+@import "mixin";
+@import "function";
+@import "box";
+@import "responsive";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

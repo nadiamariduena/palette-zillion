@@ -1,0 +1,14 @@
+@function colorOne($color-name) {
+  @return map-get($colorsOne, $color-name);
+}
+// ------------------------
+// -------------------------
+@function colorTwo($color-name) {
+  @return map-get($colorsTwo, $color-name);
+}
+
+// ------------------------
+// -------------------------
+@function colorThree($color-name) {
+  @return map-get($colorsThree, $color-name);
+}
