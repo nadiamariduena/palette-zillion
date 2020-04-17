@@ -1,0 +1,326 @@
+body {
+  background-color: green;
+  overflow-x: hidden;
+}
+body #box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: color(neutral);
+}
+body #box-container h2 {
+  padding: 50px 0;
+}
+body .box-wrapper {
+  background-color: #fdfdfd;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+body .box-one,
+body .box-two,
+body .box-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 25%;
+  height: 60%;
+  margin: 2px;
+  padding: 10px;
+  border: 1px #d4d4d4 solid;
+}
+body .box-a-one, body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three,
+body .box-a-two,
+body .box-a-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fffd7d;
+  width: 33%;
+  height: 100%;
+  margin: 5px 0 5px 0;
+}
+body .box-a-one, body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three {
+  background-color: #fffd7d;
+}
+body .box-a-two {
+  background-color: #cccb81;
+}
+body .box-a-three {
+  background-color: #eebf5c;
+}
+body .box-b-one {
+  background-color: #eb3333;
+}
+body .box-b-two {
+  background-color: red;
+}
+body .box-b-three {
+  background-color: #e47982;
+}
+body .box-c-one {
+  background-color: #0f044d;
+}
+body .box-c-two {
+  background-color: #0f0f2c;
+}
+body .box-c-three {
+  background-color: #35379c;
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    background-color: #fdfdfd;
+  }
+  body #box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+  }
+  body #box-container h2 {
+    padding: 50px 0;
+    font-family: arial;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  body .box-wrapper {
+    background-color: white;
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .box-one,
+body .box-two,
+body .box-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 33.3%;
+    margin: 0;
+    padding: 2px;
+    border: 0;
+  }
+  body .box-a-one,
+body .box-a-two,
+body .box-a-three,
+body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 30%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 569px) {
+  body {
+    background-color: #c7c7c7;
+  }
+  body #box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+  }
+  body #box-container h2 {
+    padding: 50px 0;
+    font-family: arial;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  body .box-wrapper {
+    width: 69vw;
+    height: 99vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .box-one,
+body .box-two,
+body .box-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 33.3%;
+    margin: 0;
+    padding: 2px;
+    border: 0;
+  }
+  body .box-a-one,
+body .box-a-two,
+body .box-a-three,
+body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 30%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
+  body #box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+  }
+  body #box-container h2 {
+    padding: 50px 0 10px 0;
+    font-size: 5rem;
+    font-family: arial;
+    font-size: 3rem;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+  }
+  body #box-container h2:hover {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0;
+    transition: 0.5s ease;
+  }
+  body .box-wrapper {
+    background-color: transparent;
+    width: 90vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  body .box-one,
+body .box-two,
+body .box-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 25%;
+    height: 70%;
+    margin: 2px;
+    padding: 10px;
+    border: 1px black solid;
+  }
+  body .box-a-one,
+body .box-a-two,
+body .box-a-three,
+body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fffd7d;
+    width: 33.33%;
+    height: 100%;
+  }
+  body .box-a-one, body .box-b-one,
+body .box-b-two,
+body .box-b-three,
+body .box-c-one,
+body .box-c-two,
+body .box-c-three {
+    background-color: #fffd7d;
+  }
+  body .box-a-two {
+    background-color: #cccb81;
+  }
+  body .box-a-three {
+    background-color: #eebf5c;
+  }
+  body .box-b-one {
+    background-color: #eb3333;
+  }
+  body .box-b-two {
+    background-color: red;
+  }
+  body .box-b-three {
+    background-color: #e47982;
+  }
+  body .box-c-one {
+    background-color: #0f044d;
+  }
+  body .box-c-two {
+    background-color: #0f0f2c;
+  }
+  body .box-c-three {
+    background-color: #35379c;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
